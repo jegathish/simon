@@ -72,6 +72,7 @@ function checkAnswer(currentlevel) {
     // terminating game
     console.log("wrong");
     $("#level-title").html("Game Over 😭");
+    if ( highScore < currentlevel)
     highScore = currentlevel;
     setTimeout(function () {
         $("#level-title").html("Press start to play again! 🔥");
